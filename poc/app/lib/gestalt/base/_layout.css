@@ -1,0 +1,51 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  position: relative;
+  max-width: 1240px;
+  height: 100%;
+  margin: auto;
+}
+#site-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  height: 3.5rem;
+  box-sizing: border-box;
+}
+#sidebar {
+  position: absolute;
+  width: 13rem;
+  top: 3.5rem;
+  bottom: 0;
+  box-sizing: border-box;
+}
+#main {
+  position: absolute;
+  top: 3.5rem;
+  left: 13rem;
+  right: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.push-up--small {
+  margin-top: .5rem;
+}
+.push-up--medium {
+  margin-top: 1rem;
+}
+.pad-left--xlarge {
+  padding-left: 1.5rem;
+}
+.pad-sides--xlarge {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.block {
+  display: block;
+}

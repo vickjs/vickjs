@@ -1,0 +1,11 @@
+<div data-bind="foreach: links">
+	<a class="nav-link pad-sides--xlarge"
+		data-bind="
+			css: {'is-active': $root.activeAction === action },
+			url: action,
+			urlArgs: actionArgs
+		">
+		<i data-bind="attr: { class: icon }"></i>
+		<span data-bind="text: label"></span>
+	</a>
+</div>

@@ -1,0 +1,28 @@
+.page-title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.page-title .first-word {
+  font-weight: 600;
+}
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+}
+.form-label {
+  font-size: .85rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.small {
+  font-size: .85rem;
+}
+.large {
+  font-size: 1.25rem;
+}
+.xx-large {
+  font-size: 1.5rem;
+}

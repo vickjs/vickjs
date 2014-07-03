@@ -1,0 +1,77 @@
+
+
+
+//
+// Main layout
+//------------------------------------------------------------------------------
+@side-padding: 1.5rem;
+@header-height: 3.5rem;
+@sidebar-width: 13rem;
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	position: relative;
+	max-width: 1240px;
+	height: 100%;
+	margin: auto;
+}
+
+#site-header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	padding: 1rem @side-padding;
+	height: @header-height;
+	box-sizing: border-box;
+}
+
+#sidebar {
+	position: absolute;
+	width: @sidebar-width;
+	top: @header-height;
+	bottom: 0;
+	box-sizing: border-box;
+}
+
+#main {
+	position: absolute;
+	top: @header-height;
+	left: @sidebar-width;
+	right: 0;
+	bottom: 0;
+	box-sizing: border-box;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+
+
+//
+// spacing
+//------------------------------------------------------------------------------
+.push-up--small {
+	margin-top: .5rem;
+}
+.push-up--medium {
+	margin-top: 1rem;
+}
+
+.pad-left--xlarge {
+	padding-left: 1.5rem;
+}
+.pad-sides--xlarge {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+
+//
+// spacing
+//------------------------------------------------------------------------------
+.block {
+	display: block;
+}

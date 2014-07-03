@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]>      <html class="no-js ie-old"> <![endif]-->
+<!--[if gt  IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Control Center :: Vick</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="lib/gestalt/all.css" rel="stylesheet" type="text/css">
+		<link href="vendor/font-awesome-4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<!--[if lte IE 9]>
+			<p class="old-browser-warning">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		<header id="site-header">
+			<h1 class="page-title">
+				Vick.js Proof of Concept
+			</h1>
+		</header>
+		<nav id="sidebar"></nav>
+		<main id="main"></main>
+		<script src="vendor/es5-shim.min.js"></script>
+		<script src="lib/shim/our-shim.js"></script>
+		<script data-main="/config.js" src="vendor/require-2.1.10.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function(event) {
+    			require(['ControlCenter.js'], function(app) {
+    				app.start();
+    			})
+  			});
+		</script>
+	</body>
+</html>

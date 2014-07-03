@@ -1,0 +1,34 @@
+
+# Navigation
+
+ 4. <del>click handlers to navigate on Sidebar</del>
+ 8. extract Routes into json object
+ 9. rename render to bind
+ 6. <del>stub in all pages</del>
+ 3. <del>navigate on load</del>
+ 7. <del>render needs to handle cleaning the node</del>
+ 5. <del>refactor away "Routes"</del>
+ 1. pushState
+ 2. support different roots
+
+# Vick
+
+ 1. move arg checking into Vick wrapper
+ 2. add definitions checker grunt task
+
+# Page
+
+ 1. create header
+
+# Libs
+
+ 1. bs (BetterServersLibrary)
+ 1. subscribe
+ 2. get data
+ 3. send
+ 4. feature
+ 5. notify
+ 6. format
+ 7. i18n
+ 8. <del>logging library</del>
+ 9. <del>markdown require plugin</del>

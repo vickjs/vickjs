@@ -6,9 +6,6 @@
 	//var version = Date.now();
 	requirejs.config({
 		paths: {
-			// our libs:
-			'knockout': 'lib/knockout-extensions/BetterServersKnockout',
-
 			// wrapped browser globals
 			'document': 'vendor/document-SHIM',
 
@@ -16,6 +13,7 @@
 			'jquery': 'vendor/jquery',
 			'backbone': 'vendor/backbone-1.1.0',
 			'underscore': 'vendor/underscore-1.5.2',
+			'knockout': 'vendor/knockout-3.0.0',
 			'markdownConverter': 'vendor/markdown/marked',
 
 			// requirejs plugins:

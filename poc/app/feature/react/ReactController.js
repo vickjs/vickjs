@@ -2,17 +2,17 @@ define(function (require) {
 	'use strict';
 	var Controller = require('lib/navigation/Controller');
 	var render = require('lib/render/Render');
-	var introTemplate = require('mdown!feature/introduction/IntroductionTemplate.mdown');
+	var reactTemplate = require('text!feature/react/ReactTemplate.html');
 
 	return new Controller({
-		name: 'Introduction',
+		name: 'React',
 		routes: {
-			MAIN: 'introduction'
+			MAIN: 'react'
 		},
 		MAIN: function () {
 			render({
 				selector: '#main',
-				template: introTemplate
+				template: reactTemplate
 			});
 		}
 

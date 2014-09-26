@@ -13,11 +13,13 @@ define(function (require) {
 		routes: { MAIN: '' },
 		MAIN: Controller.redirect('Introduction.MAIN')
 	});
+	require('feature/angular/AngularController');
+	require('feature/backbone/BackboneController');
+	require('feature/ember/EmberController');
 	require('feature/introduction/IntroductionController');
-	require('feature/product/ProductController');
-	require('feature/template/TemplateController');
-	require('feature/object-store/ObjectStoreController');
-	require('feature/action-log/ActionLogController');
+	require('feature/knockout/KnockoutController');
+	require('feature/polymer/PolymerController');
+	require('feature/react/ReactController');
 	require('feature/todo/TodoController');
 
 	var SidebarViewModel = require('feature/sidebar/SidebarViewModel');

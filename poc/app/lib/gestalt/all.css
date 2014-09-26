@@ -125,34 +125,30 @@ html {
 }
 body {
   position: relative;
-  max-width: 1240px;
-  height: 100%;
-  margin: auto;
-}
-#site-header {
-  position: absolute;
-  top: 0;
   width: 100%;
-  padding: 1rem 1.5rem;
-  height: 3.5rem;
-  box-sizing: border-box;
+  height: 100%;
 }
 #sidebar {
   position: absolute;
   width: 13rem;
-  top: 3.5rem;
+  top: 0rem;
   bottom: 0;
   box-sizing: border-box;
 }
-#main {
+.main-container {
   position: absolute;
-  top: 3.5rem;
+  top: 0rem;
   left: 13rem;
   right: 0;
   bottom: 0;
   box-sizing: border-box;
   overflow-y: auto;
   overflow-x: hidden;
+}
+#main {
+  width: 60rem;
+  margin: auto;
+  overflow: scroll;
 }
 .push-up--small {
   margin-top: .5rem;

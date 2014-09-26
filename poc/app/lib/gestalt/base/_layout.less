@@ -5,7 +5,7 @@
 // Main layout
 //------------------------------------------------------------------------------
 @side-padding: 1.5rem;
-@header-height: 3.5rem;
+@header-height: 0rem;
 @sidebar-width: 13rem;
 
 html {
@@ -15,19 +15,18 @@ html {
 
 body {
 	position: relative;
-	max-width: 1240px;
+	width: 100%;
 	height: 100%;
-	margin: auto;
 }
 
-#site-header {
-	position: absolute;
-	top: 0;
-	width: 100%;
-	padding: 1rem @side-padding;
-	height: @header-height;
-	box-sizing: border-box;
-}
+// #site-header {
+// 	position: absolute;
+// 	top: 0;
+// 	width: 100%;
+// 	padding: 1rem @side-padding;
+// 	height: @header-height;
+// 	box-sizing: border-box;
+// }
 
 #sidebar {
 	position: absolute;
@@ -37,7 +36,7 @@ body {
 	box-sizing: border-box;
 }
 
-#main {
+.main-container {
 	position: absolute;
 	top: @header-height;
 	left: @sidebar-width;
@@ -46,6 +45,12 @@ body {
 	box-sizing: border-box;
 	overflow-y: auto;
 	overflow-x: hidden;
+}
+
+#main {
+	width: 60rem;
+	margin: auto;
+	overflow: scroll;
 }
 
 

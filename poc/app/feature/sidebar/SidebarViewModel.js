@@ -10,32 +10,32 @@ define(function () {
 		}, {
 			label: 'Angular',
 			icon: 'fa fa-html5',
-			action: 'Product.MAIN',
+			action: 'Angular.MAIN',
 			actionArgs: { }
 		}, {
 			label: 'Ember',
 			icon: 'fa fa-gamepad',
-			action: 'Template.MAIN',
+			action: 'Ember.MAIN',
 			actionArgs: { }
 		}, {
 			label: 'Polymer',
 			icon: 'fa fa-gift',
-			action: 'ObjectStore.MAIN',
+			action: 'Polymer.MAIN',
 			actionArgs: { }
 		}, {
-			label: 'D3',
+			label: 'React',
 			icon: 'fa fa-tasks',
-			action: 'ActionLog.MAIN',
+			action: 'React.MAIN',
 			actionArgs: { }
 		}, {
 			label: 'Backbone',
 			icon: 'fa fa-code',
-			action: 'ActionLog.MAIN',
+			action: 'Backbone.MAIN',
 			actionArgs: { }
 		}, {
 			label: 'Knockout',
 			icon: 'fa fa-pagelines',
-			action: 'ActionLog.MAIN',
+			action: 'Knockout.MAIN',
 			actionArgs: { }
 		}, {
 			label: 'To Do',
@@ -43,8 +43,12 @@ define(function () {
 			action: 'Todo.MAIN',
 			actionArgs: { }
 		}];
-		this.activeAction = 'Dashboard.MAIN';
+		this.activeAction = 'Introduction.MAIN';
 	}
+
+	SidebarViewModel.prototype.doNavigate = function(action, args) {
+		// body...
+	};
 
 	return SidebarViewModel;
 });

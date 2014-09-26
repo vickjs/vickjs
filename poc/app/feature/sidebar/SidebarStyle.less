@@ -1,11 +1,19 @@
+#sidebar {
+	background: antiquewhite;
+}
+
+#sidebar header {
+	margin: 1.5rem 0;
+}
+
 .nav-link {
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
+	box-sizing: border-box;
 	position: relative;
 	display: block;
 	margin: .5rem 0;
 	padding-top: .5em;
 	padding-bottom: .5em;
+	cursor: pointer;
 	&:link {
 		color: inherit;
 		text-decoration: none;
@@ -35,6 +43,7 @@
 		background-color: white;
 		border: 1px solid black;
 		border-right: none;
+		border-left: none;
 		&::before {
 			content: " ";
 			position: absolute;
